@@ -11,6 +11,7 @@ public class CreateCompanyData {
     public ArrayList<String> companyUsers;
     public String emailOwner;
     public String type;
+    public String id_company;
 
     public CreateCompanyData(){};
 
@@ -51,5 +52,10 @@ public class CreateCompanyData {
     @JsonGetter("type")
     public String getType() {
         return type;
+    }
+
+    @JsonGetter("id_company")
+    public String getId_company() {
+        return id_company;
     }
 }
